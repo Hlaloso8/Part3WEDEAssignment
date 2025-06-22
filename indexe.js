@@ -32,7 +32,7 @@ document.getElementById("hlalo").onclick = function(){
         ];
       } else if (album === "funeral") {
         images = [
-          "images/funeral photoshoot.jpg",
+          "images/funeral.webp",
          
         ];
       } else if (album === "babyshower") {
