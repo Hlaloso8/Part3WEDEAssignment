@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Reen Media</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+.about {
+  background: linear-gradient(135deg, #ffffff, #f2f2f2);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.25rem;
+}
+
+.about h2, .about h3 {
+  font-size: 2rem;
+  color: #222;
+  margin-top: 2rem;
+}
+
+.about img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.about ul li {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.about ul li strong {
+  font-weight: bold;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  width: 18rem;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + ul {
+    display: flex;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span {
+    background: transparent;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Reen Media</a>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container about-container">
+            <h1>About Us</h1>
+            <p>Welcome to Reen Media, your go-to professional photography service! Founded on May 29, 2019, by Queen Tleane, we specialize in capturing life’s most cherished moments. From weddings to corporate events, our expert photography, picture editing, and custom framing ensure lasting memories. At Reen Media, every shot tells a story.</p>
+            <p>Let us bring yours to life with passion and precision.</p>
+            <img src="images/graduation photoshoot.jpeg" alt="Graduation Photoshoot">
+            
+            <h2>Our Mission</h2>
+            <p>Our mission is to preserve memories in their most authentic form. We strive to not only capture moments but to encapsulate emotions, creating timeless pieces of art. Every photo we take is a reflection of our dedication to excellence, creativity, and personalized service. We work with our clients to ensure that every image truly tells the story of their special moment.</p>
+
+            <h2>Our Vision</h2>
+            <p>We aim to be a leading photography service that brings artistic storytelling to every aspect of life’s milestones. Our vision is to continue growing as a brand, recognized for quality, creativity, and passion in every shot. We hope to serve people worldwide, offering a high-quality service that transforms the way memories are cherished.</p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Expert Photography</strong> - Our team of photographers has years of experience capturing everything from intimate moments to grand events.</li>
+                <li><strong>Custom Editing</strong> - We offer personalized photo editing to enhance every image and ensure it matches the vision of the moment.</li>
+                <li><strong>Framing Services</strong> - Not only do we capture memories, but we also offer custom framing to make sure your pictures are displayed beautifully for years to come.</li>
+                <li><strong>Client-Centered Approach</strong> - Your vision is our priority. We listen closely to understand your needs and deliver photography services that exceed expectations.</li>
+            </ul>
+
+            <h2>Our Team</h2>
+            <p>At Reen Media, we have a talented group of professionals who are passionate about photography and visual storytelling. Each team member brings a unique perspective, which allows us to offer diverse and creative solutions for our clients. From photographers to editors, everyone at Reen Media works together to bring your vision to life.</p>
+            
+            <h3>Meet Queen Tleane</h3>
+            <p>Queen Tleane, the founder and head photographer of Reen Media, started the company with a single mission: to capture life’s most important moments with authenticity and artistry. Her passion for photography stems from her love for storytelling and creating visual memories that last a lifetime. Queen’s attention to detail and creative eye have earned her a loyal following of clients who trust her with their most precious moments.</p>
+            <img src="images/queen-tleane.jpg" alt="Queen Tleane">
+            
+            <h3>Our Team</h3>
+            <div class="team">
+                <div class="team-member">
+                    <img src="images/team1.jpg" alt="Team Member 1">
+                    <p>John Doe</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team2.jpg" alt="Team Member 2">
+                    <p>Jane Smith</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team3.jpg" alt="Team Member 3">
+                    <p>Emily Clark</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team4.jpg" alt="Team Member 4">
+                    <p>Michael Brown</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team5.jpg" alt="Team Member 5">
+                    <p>David Williams</p>
+                </div>
+            </div>
+
+            <h2>Let’s Work Together</h2>
+            <p>If you’re ready to capture your special moments with precision, passion, and creativity, let’s talk! Reach out to us through our <a href="enquiry.html">Enquiry Page</a> or contact us directly to schedule a consultation. We’re excited to bring your vision to life!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Reen Media Photography. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
